@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELITE MOTORS | Premium Car Showroom</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <span>ELITE</span> MOTORS
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO ELITE MOTORS</p>
+
+            <h1>
+                DRIVE THE
+                <span>EXTRAORDINARY</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover an exclusive collection of luxury,
+                performance and prestige automobiles.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#collection" class="btn gold-btn">
+                    Explore Collection
+                </a>
+
+                <a href="#contact" class="btn outline-btn">
+                    Book a Visit
+                </a>
+            </div>
+
+        </div>
+
+        <div class="scroll-down">
+            SCROLL TO EXPLORE
+            <div></div>
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTION -->
+    <section class="collection" id="collection">
+
+        <div class="section-heading">
+            <p>OUR COLLECTION</p>
+
+            <h2>
+                MASTERPIECES
+                <span>ON WHEELS</span>
+            </h2>
+
+            <div class="line"></div>
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="filter-buttons">
+            <button class="filter active" onclick="filterCars('all')">ALL</button>
+            <button class="filter" onclick="filterCars('luxury')">LUXURY</button>
+            <button class="filter" onclick="filterCars('sports')">SPORTS</button>
+            <button class="filter" onclick="filterCars('suv')">SUV</button>
+        </div>
+
+
+        <!-- CAR GRID -->
+        <div class="car-grid">
+
+            <!-- CAR 1 -->
+            <div class="car-card luxury">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">LUXURY</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • PREMIUM SEDAN</p>
+
+                    <h3>Mercedes-Benz S-Class</h3>
+
+                    <div class="car-bottom">
+                        <span>₹1.80 Cr*</span>
+
+                        <button onclick="showDetails('Mercedes-Benz S-Class')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 2 -->
+            <div class="car-card sports">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">SPORTS</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • PERFORMANCE</p>
+
+                    <h3>Porsche 911</h3>
+
+                    <div class="car-bottom">
+                        <span>₹2.10 Cr*</span>
+
+                        <button onclick="showDetails('Porsche 911')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 3 -->
+            <div class="car-card suv">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">SUV</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • LUXURY SUV</p>
+
+                    <h3>Range Rover</h3>
+
+                    <div class="car-bottom">
+                        <span>₹2.50 Cr*</span>
+
+                        <button onclick="showDetails('Range Rover')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 4 -->
+            <div class="car-card luxury">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">LUXURY</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • GRAND TOURER</p>
+
+                    <h3>Bentley Continental GT</h3>
+
+                    <div class="car-bottom">
+                        <span>₹5.50 Cr*</span>
+
+                        <button onclick="showDetails('Bentley Continental GT')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 5 -->
+            <div class="car-card sports">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">SPORTS</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • SUPERCAR</p>
+
+                    <h3>Lamborghini Huracán</h3>
+
+                    <div class="car-bottom">
+                        <span>₹4.00 Cr*</span>
+
+                        <button onclick="showDetails('Lamborghini Huracán')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAR 6 -->
+            <div class="car-card suv">
+
+                <div class="car-image">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1200&q=80">
+
+                    <span class="tag">SUV</span>
+                </div>
+
+                <div class="car-info">
+
+                    <p>2026 • PREMIUM SUV</p>
+
+                    <h3>Range Rover Sport</h3>
+
+                    <div class="car-bottom">
+                        <span>₹2.00 Cr*</span>
+
+                        <button onclick="showDetails('Range Rover Sport')">
+                            VIEW →
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="about">
+
+        <div class="experience-content">
+
+            <p>THE ELITE EXPERIENCE</p>
+
+            <h2>
+                MORE THAN A
+                <span>SHOWROOM.</span>
+            </h2>
+
+            <p class="description">
+                At Elite Motors, every vehicle is carefully selected
+                for customers who expect extraordinary performance,
+                design and sophistication.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong>150+</strong>
+                    <span>Premium Cars</span>
+                </div>
+
+                <div>
+                    <strong>12+</strong>
+                    <span>Luxury Brands</span>
+                </div>
+
+                <div>
+                    <strong>10</strong>
+                    <span>Years Experience</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+
+            <p>CONTACT ELITE MOTORS</p>
+
+            <h2>
+                YOUR NEXT
+                <span>DRIVE AWAITS.</span>
+            </h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <div class="input-row">
+
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" placeholder="Email Address" required>
+
+            </div>
+
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <select id="car">
+
+                <option value="">Select Your Dream Car</option>
+
+                <option>Mercedes-Benz S-Class</option>
+                <option>Porsche 911</option>
+                <option>Range Rover</option>
+                <option>Bentley Continental GT</option>
+                <option>Lamborghini Huracán</option>
+
+            </select>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn gold-btn">
+                REQUEST A CALLBACK
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ELITE MOTORS
+        </div>
+
+        <p>
+            Luxury • Performance • Prestige
+        </p>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Elite Motors. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <div class="modal" id="carModal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="closeModal()">×</button>
+
+            <p>ELITE MOTORS</p>
+
+            <h2 id="modalTitle"></h2>
+
+            <p>
+                Experience luxury, performance and advanced
+                automotive technology with our exclusive collection.
+            </p>
+
+            <button class="btn gold-btn" onclick="closeModal()">
+                CLOSE
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
