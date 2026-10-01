@@ -1,7 +1,3 @@
-// ==============================
-// MOBILE MENU
-// ==============================
-
 function toggleMenu() {
 
     const nav = document.querySelector("nav");
